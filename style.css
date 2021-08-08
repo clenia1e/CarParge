@@ -14,7 +14,7 @@ main {
     justify-content: center;
 }
 
-.crud-part {
+.container {
     display: flex;
     justify-content: center;
     padding: 0px 100px;
@@ -35,7 +35,7 @@ header {
     margin-top: 50px;
 }
 
-#buy-car {
+.form-container {
     text-align: left;
     border-radius: 10px;
     padding: 15px;
@@ -59,7 +59,7 @@ div {
     border: none;
 }
 
-#result-img {
+#car-img {
     width: 653px;
     margin-top: 150px;
 }
@@ -127,7 +127,7 @@ div {
     margin: 0;
 }
 
-#result {
+#buy-button {
     width: 250px;
     height: 47px;
     background-color: #656565;
@@ -164,14 +164,14 @@ select {
 }
 
 @media (max-width: 600px) {
-    .crud-part {
+    .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 20px;
     }
-    #buy-car {
+    .form-container {
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -183,7 +183,7 @@ select {
         margin-top: 20px;
         width: 300px;
     }
-    #result-img {
+    #car-img {
         margin-top: 0;
         width: 300px;
         height: 180px;

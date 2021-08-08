@@ -7,7 +7,7 @@ const selectedAuto = () => {
     let selectText = select.options[select.selectedIndex].text
     let selectYears = document.getElementById("select-years").value
     var selectValue = document.getElementById("select-cars").value
-    var resultImg = document.getElementById("result-img")
+    var resultImg = document.getElementById("car-img")
     const selectButton = document.getElementById("select-button")
 
     var img = document.getElementById('Auto')
@@ -15,14 +15,11 @@ const selectedAuto = () => {
     console.log('o select', selectValue)
     if (selectValue == "230000") {
         console.log(img)
-        // window.alert('voce selecionou compass')
         resultImg.innerHTML = `<img id='Auto' src='img/compass.png' />`
 
     } else if (selectValue == "400000") {
-        // window.alert('voce selecionou grand')
         resultImg.innerHTML = `<img id='Auto' src='img/grand.png' />`
     } else {
-        //window.alert('voce selecionou renegade')
         resultImg.innerHTML = `<img id='Auto' src='img/renegade.png' />`
     }
     selectTitle.innerHTML = ` <h1 class="car-title">  ${selectText} ${selectYears} </h1>`
@@ -33,14 +30,14 @@ const simulate = () => {
     let select = document.getElementById("select-cars")
     let selectValue = select.value
     let selectYears = document.getElementById("select-years").value
-    let paymentValue = document.getElementById("payment").value
+    let paymentValue = document.getElementById("select-payment").value
     let resultPrice = document.getElementById("result-price")
     let resultYears
     let totalPayment
     console.log(selectYears)
 
     if(selectValue == "" || selectYears == "" || paymentValue == ""){
-        window.alert('Fill all spaces first')
+        window.alert('Fill all spaces first!')
     }else{
         switch (selectYears) {
 
@@ -77,13 +74,12 @@ const buy = () => {
     const selectText = select.options[select.selectedIndex].text
     let selectValue = select.value
     let selectYearsValue = document.getElementById("select-years").value
-    let paymentValue = document.getElementById("payment").value
+    let paymentValue = document.getElementById("select-payment").value
     let purchaseFinish = document.getElementById("purchase-finish")
 
-    if(selectValue == "" || selectYears == "" || paymentValue == ""){
-        window.alert('Fill all spaces first')
+    if(selectValue == "" || selectYearsValue == "" || paymentValue == ""){
+        window.alert('Fill all spaces first!')
     }else{
     window.alert(` You bought ${selectText} ${selectYearsValue} `)
-    //purchaseFinish.innerHTML = `<p> Auto: ${selectText}</p> <p> Year ${selectYearsValue}</p> <p> Total Value ${selectValue}</p>`
     }
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CrudCar</title>
+    <title>CarPage</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,10 +17,10 @@
     </header>
 
     <main>
-        <section class="crud-part">
-            <div id="result-img">
+        <section class="container">
+            <div id="car-img">
             </div>
-            <div id="buy-car" class="buy-car">
+            <div id="form-container" class="form-container">
                 <div id="title">
 
                 </div>
@@ -42,7 +42,7 @@
                     
                 </p>
                 <p>
-                    <select name="#" id="payment">
+                    <select name="#" id="select-payment">
                         <option value="" selected> Select payment</option>
                         <option value="1"> In Cash </option>
                         <option value="2"> Financed</option>
@@ -52,7 +52,7 @@
 
                 </div>
                 <div class="button-group">
-                    <button id="result" onclick="buy()">Buy</button>
+                    <button id="buy-button" onclick="buy()">Buy</button>
                     <button id="simulate" onclick="simulate()">Simulate</button>
                 </div>
 
