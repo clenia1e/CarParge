@@ -39,32 +39,37 @@ const simulate = () => {
     let totalPayment
     console.log(selectYears)
 
-    switch (selectYears) {
+    if(selectValue == "" || selectYears == "" || paymentValue == ""){
+        window.alert('Fill all spaces first')
+    }else{
+        switch (selectYears) {
 
-        case "2022":
-            resultYears = Number(selectValue) + 10000
+            case "2022":
+                 resultYears = Number(selectValue) + 10000
             break;
 
-        case "2021":
-            resultYears = Number(selectValue) + 5000
+            case "2021":
+                resultYears = Number(selectValue) + 5000
             break;
 
-        case "2020":
-            resultYears = Number(selectValue) - 10000
+            case "2020":
+                resultYears = Number(selectValue) - 10000
             break;
-    }
-    switch (paymentValue) {
+        }
+        switch (paymentValue) {
 
-        case "1":
-            totalPayment = resultYears
+            case "1":
+                totalPayment = resultYears
             break;
 
-        case "2":
-            totalPayment = resultYears + 80000
+            case "2":
+                totalPayment = resultYears + 80000
             break;
-    }
+        }
+           
     console.log(totalPayment)
     resultPrice.innerHTML = ` <p class="total-style">   Total:  </p>  <p class="price-style"> R$ ${totalPayment},00  </p>`
+    }
 }
 
 const buy = () => {
@@ -75,7 +80,10 @@ const buy = () => {
     let paymentValue = document.getElementById("payment").value
     let purchaseFinish = document.getElementById("purchase-finish")
 
+    if(selectValue == "" || selectYears == "" || paymentValue == ""){
+        window.alert('Fill all spaces first')
+    }else{
     window.alert(` You bought ${selectText} ${selectYearsValue} `)
     //purchaseFinish.innerHTML = `<p> Auto: ${selectText}</p> <p> Year ${selectYearsValue}</p> <p> Total Value ${selectValue}</p>`
-
+    }
 }
