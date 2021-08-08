@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrudCar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 id="main-title">Jeepy</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section class="crud-part">
+            <div id="result-img">
+            </div>
+            <div id="buy-car" class="buy-car">
+                <div id="title">
+
+                </div>
+                <p>
+                <select name="selectModel" id="select-cars" onchange="selectedAuto()">
+                    <option value="" selected> Select your car</option>
+                    <option value="230000">Compass</option>
+                    <option value="400000">Grand Cherokee</option>
+                    <option value="76000">Renegade</option>
+                </select>
+                </p>
+                <p>
+                    <select name="#" id="select-years" onchange="selectedAuto()">
+                        <option value="" selected> Select year</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                    </select>
+                    
+                </p>
+                <p>
+                    <select name="#" id="payment">
+                        <option value="" selected> Select payment</option>
+                        <option value="1"> In Cash </option>
+                        <option value="2"> Financed</option>
+                    </select>
+                </p>
+                <div id="result-price">
+
+                </div>
+                <div class="button-group">
+                    <button id="result" onclick="buy()">Buy</button>
+                    <button id="simulate" onclick="simulate()">Simulate</button>
+                </div>
+
+            </div>
+
+            </div>
+
+            <div id="purchase-finish">
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

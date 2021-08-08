@@ -1,0 +1,203 @@
+@font-face {
+    font-family: JeepyFont;
+    src: url(font/RubikMonoOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: rubik;
+    src: url(font/Rubik-SemiBold.ttf);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crud-part {
+    display: flex;
+    justify-content: center;
+    padding: 0px 100px;
+}
+
+body {
+    background-color: #E5E5E5;
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+#resultButton {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#buy-car {
+    text-align: left;
+    border-radius: 10px;
+    padding: 15px;
+    width: 550px;
+    height: 300px;
+    margin-left: 150px;
+}
+
+div {
+    display: inline-block;
+}
+
+.mainFooter {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+#Auto {
+    width: 653px;
+    border: none;
+}
+
+#result-img {
+    width: 653px;
+    margin-top: 150px;
+}
+
+.select-options {
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
+
+.navbar {
+    padding: 21px 64px;
+}
+
+#main-title {
+    color: #B1B1B1;
+    font-family: JeepyFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    margin: 0;
+    text-align: left;
+}
+
+#result-price {
+    text-align: left;
+    height: 100px;
+    overflow: hidden;
+    width: 300px;
+    margin-top: 76px;
+}
+
+#title {
+    color: #717171;
+    font-family: JeepyFont;
+    font-size: 20px;
+    overflow: hidden;
+    height: 36px;
+}
+
+#simulate {
+    width: 250px;
+    height: 47px;
+    color: #C1C1C1;
+    font-size: 24px;
+    background-color: none;
+    border: none;
+    background: none;
+    font-family: rubik;
+}
+
+.total-style {
+    font-size: 24px;
+    color: #646464;
+    font-family: rubik;
+    font-weight: 700;
+    margin-bottom: 23px;
+    margin-top: 0px;
+}
+
+.price-style {
+    font-size: 36px;
+    font-family: rubik;
+    font-weight: bold;
+    margin: 0;
+}
+
+#result {
+    width: 250px;
+    height: 47px;
+    background-color: #656565;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+    font-family: rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #D8D8D8;
+}
+
+.button-group {
+    margin-top: 196px;
+}
+
+.car-title {
+    margin: 0;
+}
+
+select {
+    width: 316px;
+    height: 47px;
+    background-color: #E2E2E2;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    font-family: rubik;
+    font-size: 16px;
+    color: #717171;
+    padding: 12px 27px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+    .crud-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    #buy-car {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: auto;
+    }
+    #Auto {
+        margin-top: 20px;
+        width: 300px;
+    }
+    #result-img {
+        margin-top: 0;
+        width: 300px;
+        height: 180px;
+    }
+    .button-group {
+       margin-top: 0;
+       display: flex;
+       flex-direction: column;
+    }
+    #result-price {
+        margin: 0;
+        text-align: left;
+        height: 100px;
+        overflow: hidden;
+        width: 300px;
+    }
+}
